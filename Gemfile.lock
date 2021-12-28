@@ -60,6 +60,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    ansi (1.5.0)
     bcrypt (3.1.16)
     bootsnap (1.9.3)
       msgpack (~> 1.0)
@@ -91,6 +92,11 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.15.0)
+    minitest-reporters (1.4.3)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
     msgpack (1.4.2)
     mysql2 (0.5.3)
     nio4r (2.5.8)
@@ -138,6 +144,7 @@ GEM
     rake (13.0.6)
     reline (0.3.0)
       io-console (~> 0.5)
+    ruby-progressbar (1.11.0)
     thor (1.1.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -156,6 +163,7 @@ DEPENDENCIES
   debug
   hirb (~> 0.7.3)
   hirb-unicode-steakknife (~> 0.0.9)
+  minitest-reporters (~> 1.1, >= 1.1.11)
   mysql2 (~> 0.5)
   pry-rails
   puma (~> 5.0)
