@@ -41,8 +41,8 @@ class Borrower < ApplicationRecord
 
   # 自分以外の同じemailのアクティブなユーザーがいる場合にtrueを返す
   def email_activated?
-    users = Borrower.where.not(id: id)
-    users.find_by_activated(email).present?
+    burrowers = Borrower.where.not(id: id)
+    burrowers.find_by_activated(email).present?
   end
 
   private
