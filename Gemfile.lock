@@ -83,7 +83,6 @@ GEM
     io-console (0.5.9)
     irb (1.4.1)
       reline (>= 0.3.0)
-    jwt (2.3.0)
     loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -156,7 +155,6 @@ GEM
     zeitwerk (2.5.1)
 
 PLATFORMS
-  x86_64-darwin-20
   x86_64-linux
 
 DEPENDENCIES
@@ -165,7 +163,6 @@ DEPENDENCIES
   debug
   hirb (~> 0.7.3)
   hirb-unicode-steakknife (~> 0.0.9)
-  jwt (~> 2.3)
   minitest-reporters (~> 1.1, >= 1.1.11)
   mysql2 (~> 0.5)
   pry-rails
