@@ -3,7 +3,6 @@ require "test_helper"
 class RefreshTokenTest < ActionDispatch::IntegrationTest
   def setup
     @user = active_borrower
-    binding.pry
     @encode = UserAuth::RefreshToken.new(user_id: @user.id)
     @lifetime = UserAuth.refresh_token_lifetime
   end

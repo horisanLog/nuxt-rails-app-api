@@ -1,6 +1,8 @@
 require "validator/email_validator"
 
 class Borrower < ApplicationRecord
+  include TokenGenerateService
+
   # バリデーション直前
   before_validation :downcase_email
 
@@ -51,6 +53,10 @@ class Borrower < ApplicationRecord
 
   def forget
     update!(refresh_jti: nil)
+  end
+
+  def response_json(payload = {})
+    as_json(only: [:id, :name]).merge(payload).with_indifferent_access
   end
 
   private
